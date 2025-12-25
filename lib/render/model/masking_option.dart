@@ -6,6 +6,8 @@ class MaskingOption {
 
   Widget descriptionWidget;
 
+  Size descriptionSize;
+
   Rect drawRect;
 
   DescriptionPosition position;
@@ -18,6 +20,7 @@ class MaskingOption {
 
   MaskingOption(
     this.id,
+    this.descriptionSize,
     this.descriptionWidget,
     this.drawRect,
     this.position,

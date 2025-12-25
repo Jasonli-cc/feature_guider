@@ -8,6 +8,8 @@ class GuideItem {
   /// Description widget for single feature item
   Widget? descriptionWidget;
 
+  Size? descriptionSize;
+
   /// The key of the widget to be highlighted for guidance, used to calculate position (or you can use a fixed Rect to define the position)
   GlobalKey? toGuideKey;
 
@@ -37,6 +39,7 @@ class GuideItem {
     this.descriptionWidget,
     this.toGuideKey,
     this.toGuideRect,
+    this.descriptionSize,
     this.position = DescriptionPosition.auto,
     this.padding = EdgeInsets.zero,
     this.borderRadius = const BorderRadius.all(Radius.circular(4)),
@@ -51,4 +54,6 @@ enum DescriptionPosition {
   alignBottomLeft,
   alignBottomRight,
   auto,
+  alignTopCenter,
+  alignBottomCenter,
 }

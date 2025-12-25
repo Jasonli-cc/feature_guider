@@ -139,6 +139,14 @@ class _MaskingStackState extends State<MaskingStack> {
         descriptionRight = screenWidth - right;
         descriptionTop = bottom + show.descInterval;
         break;
+      case DescriptionPosition.alignTopCenter:
+        descriptionLeft = widgetCenterX - widget.show.descriptionSize.width / 2;
+        descriptionBottom = (screenHeight - top) + show.descInterval;
+        break;
+      case DescriptionPosition.alignBottomCenter:
+        descriptionLeft = widgetCenterX - widget.show.descriptionSize.width / 2;
+        descriptionTop = bottom + show.descInterval;
+        break;
     }
 
     Widget actualDescriptionWidget = Material(

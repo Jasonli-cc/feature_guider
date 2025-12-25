@@ -83,6 +83,7 @@ class GuideManager {
     }
     _overlayDescArray.add(MaskingOption(
       item.id,
+      item.descriptionSize ?? Size.zero,
       item.descriptionWidget ?? Container(),
       Rect.fromLTRB(l, t, r, b),
       item.position,
@@ -104,6 +105,7 @@ class GuideManager {
     b = item.toGuideRect!.bottom;
     _overlayDescArray.add(MaskingOption(
       item.id,
+      item.descriptionSize ?? Size.zero,
       item.descriptionWidget ?? Container(),
       Rect.fromLTRB(l, t, r, b),
       item.position,
